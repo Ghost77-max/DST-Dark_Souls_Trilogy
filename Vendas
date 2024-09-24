@@ -1,7 +1,0 @@
-echo "# DST-Dark_Souls_Trilogy" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Ghost77-max/DST-Dark_Souls_Trilogy.git
-git push -u origin main

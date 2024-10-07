@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Itens</title>
+    <link rel="stylesheet" href="Styles/itensStyles/stylesItens.css">
+    <link rel="stylesheet" href="Styles/itensStyles/modalitens.css">
+</head>
+<body>
+
+   <!--COPIAR DESTE MALDITO PONTO PARA REPETIR CABEÇARIO EM OUTRAS PAGINAS-->  
+    <!-- Sidebar -->
+    <div class="cont-principal">
+        <div class="sidebar" id="sidebar">
+            <button id="toggleButton">☰</button>
+            <nav>
+                    <ul>
+                         <li><a href="profile.php">Perfil</a></li>
+                         <li><a href="cart.html">Carrinho</a></li>
+                         <li><a href="index.html">Página Principal</a></li>
+                         <li><a href="games.html">Jogos</a></li>
+                         <li><a href="items.html">Itens</a></li>
+                    </ul>
+            </nav>
+   </div>
+   <div class="content2">
+<!-- Container do Cabeçalho -->
+<header class="header">
+    <h1 class="MSG-oferta">🔥Aproveite Nossas Ofertas!🔥</h1>
+    <div class="header2">
+       <div class="logo">
+        <h1>Bonfire dos Jogos</h1>
+        <img src="IMAGENS/image-removebg-preview.png" alt="">
+<!--A BAIXARIA COMEÇA AQUI E VAI SABER ONDE VAI PARAR,DEUS QUE ME SALVE-->
+<header>
+    <!-- Botão para abrir o modal -->
+    <button id="loginButton" class="active">Entrar</button>
+        <div id="modalOverlay" class="hidden"></div>
+
+    <!-- Modal de login/registro -->
+        <div id="loginModal" class="hidden">
+            <div class="modal-content">
+
+            <!-- Botão "X" para fechar o modal --> 
+              <span class="close">&times;</span>  
+                <div class="modal-header">
+                    <button id="loginTab" class="active1">Entrar</button>
+                    <button id="registerTab">Registrar</button>
+                </div>
+
+                <div id="loginForm" class="form-content">
+                    <form>
+                     <label for="emailLogin">E-mail:</label>
+                     <input type="email" id="emailLogin" required>
+                     <label for="passwordLogin">Senha:</label>
+                     <input type="password" id="passwordLogin" required>
+                     <button type="submit">Login</button>
+                    </form>
+                </div>
+
+    <div id="registerForm" class="form-content hidden">
+        <form>
+            <div class="social-login">
+                <button class="social-button steam">Steam</button>
+                <button class="social-button facebook">Facebook</button>
+                <button class="social-button twitch">Twitch</button>
+                <button class="social-button wechat">WeChat</button>
+            </div>
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" required>
+            <label for="emailRegister">E-mail:</label>
+            <input type="email" id="emailRegister" required>
+            <label for="passwordRegister">Senha:</label>
+            <input type="password" id="passwordRegister" required>
+            <label for="birthDate">Data de Nascimento:</label>
+            <input type="date" id="birthDate" required>
+            <div class="terms">
+                <input type="checkbox" id="terms" required> Eu aceito os termos e condições.
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<!--acaba aqui a baixaria-->
+
+<!-- Adicione ao seu arquivo existente -->
+<nav>
+ <button id="cartButton">🛒Carrinho <span id="cartCount">0</span></button>
+</nav>
+
+<div id="cartPreview" class="cart-preview hidden">
+    <div class="cart-item">
+        <img src="https://via.placeholder.com/50" alt="Imagem do Jogo">
+
+        <div class="cart-item-info">
+           <p>12 Labours of Hercules</p>
+           <p>R$ 2,64</p>
+        </div>
+
+    </div>
+ <button id="checkoutButton">Ver Carrinho</button>
+</div>
+
+</header>
+        
+    <!--FINALMENTE ACABOU PQP,DEVO DIZER VAI TODO MUNDO SE FODER-->
+        <div class="search-bar">
+        <input type="text" placeholder="Find your game here">
+         <button>Procurar</button>
+        </div>
+        <nav class="menu" >
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+            </ul>
+        </nav>
+
+    </div> 
+ </div>     
+</header>
+<!--TERMINAR A COPIA AQUI-->
+
+    <!-- Container Principal -->
+    <div class="main-container">
+        
+        <!-- Filtro de Categorias -->
+        <div class="filter-container">
+            <button class="filter-button">Filtrar</button>
+            <select id="category-filter">
+                <option value="todos">Todos</option>
+                <option value="acao">Ação</option>
+                <option value="aventura">Aventura</option>
+                <option value="rpg">RPG</option>
+                <option value="estrategia">Estratégia</option>
+            </select>
+        </div>
+
+        <!-- Seção de Jogos -->
+        <section class="games-catalog">
+            <div class="game-card">
+                <a href="comprar-dark-souls.html">
+                    <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.24.01_f0349e73.jpg" alt="Dark Souls 2">
+                    <h3>Dark Souls 2</h3>
+                </a>
+                <span>45,90 R$</span>
+            </div>
+
+            <div class="game-card">
+                <a href="comprar-hollow-knight.html">
+                    <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.26.52_d27aea43.jpg" alt="Hollow Knight">
+                    <h3>Hollow Knight</h3>
+                </a>
+                <span>213,00 R$</span>
+            </div>
+
+            <!-- Adicione outros jogos aqui -->
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Bonfire dos Jogos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="Scripts/filtro.js"></script>
+    <script src="ScriptsStyle/buttonCompra.js"></script>
+    <script src="ScriptsStyle/carrinho.js"></script>
+    <script src="ScriptsStyle/modal.js"></script>
+    <script src="ScriptsStyle/sidebar.js"></script>
+    <script src="ScriptsStyle/formCad.js"></script>
+  
+    
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonfire dos Jogos</title>
+    <link rel="stylesheet" href="Styles/indexStyles/modalindex.css">
+    <link rel="stylesheet" href="Styles/indexStyles/styles.css">
+     
+</head>
+<body>
+    <!--COPIAR DESTE MALDITO PONTO PARA REPETIR CABEÇARIO EM OUTRAS PAGINAS-->  
+    <!-- Sidebar -->
+         <div class="cont-principal">
+            <div class="sidebar" id="sidebar">
+                <button id="toggleButton">☰</button>
+                <nav>
+                        <ul>
+                             <li><a href="profile.php">Perfil</a></li>
+                             <li><a href="carrinho.html">Carrinho</a></li>
+                             <li><a href="index.html">Página Principal</a></li>
+                             <li><a href="jogos.html">Jogos</a></li>
+                             <li><a href="itens.html">Itens</a></li>
+                        </ul>
+                </nav>
+       </div>
+       <div class="content2">
+    <!-- Container do Cabeçalho -->
+    <header class="header">
+        
+        <div class="header2">
+           <div class="logo">
+            <h1>Bonfire dos Jogos</h1>
+            <img src="IMAGENS/image-removebg-preview.png" alt="">
+    <!--A BAIXARIA COMEÇA AQUI E VAI SABER ONDE VAI PARAR,DEUS QUE ME SALVE-->
+    <header>
+        <!-- Botão para abrir o modal -->
+        <button id="loginButton" class="active">Entrar</button>
+            <div id="modalOverlay" class="hidden"></div>
+
+        <!-- Modal de login/registro -->
+            <div id="loginModal" class="hidden">
+                <div class="modal-content">
+
+                <!-- Botão "X" para fechar o modal --> 
+                  <span class="close">&times;</span>  
+                    <div class="modal-header">
+                        <button id="loginTab" class="active1">Entrar</button>
+                        <button id="registerTab">Registrar</button>
+                    </div>
+
+                    <div id="loginForm" class="form-content">
+                        <form>
+                        <br>
+                         <label for="emailLogin">E-mail:</label>
+                         <input type="email" id="emailLogin" required>
+                         <br>
+                         <label for="passwordLogin">Senha:</label>
+                         <input type="password" id="passwordLogin" required>
+                         <br>
+                         <button type="submit">Login</button>
+                        </form>
+                    </div>
+
+        <div id="registerForm" class="form-content hidden">
+            <form>
+                <div class="social-login">
+                    <button class="social-button steam">Steam</button>
+                    <button class="social-button facebook">Facebook</button>
+                    <button class="social-button twitch">Twitch</button>
+                    <button class="social-button wechat">WeChat</button>
+                </div>
+                <br>
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" required>
+                <br>
+                <label for="emailRegister">E-mail:</label>
+                <input type="email" id="emailRegister" required>
+                <br>
+                <label for="passwordRegister">Senha:</label>
+                <input type="password" id="passwordRegister" required>
+                <br>
+                <label for="birthDate">Data de Nascimento:</label>
+                <input type="date" id="birthDate" required>
+                <br>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required> Eu aceito os termos e condições.
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <!--acaba aqui a baixaria-->
+ 
+    <!-- Adicione ao seu arquivo existente -->
+    <nav>
+     <button id="cartButton">🛒Carrinho <span id="cartCount">0</span></button>
+    </nav>
+
+    <div id="cartPreview" class="cart-preview hidden">
+        <div class="cart-item">
+            <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.26.52_d27aea43.jpg" alt="Imagem do Jogo">
+            <div class="cart-item-info">
+               <p>12 Labours of Hercules</p>
+               <p>R$ 2,64</p>
+            </div>
+
+        </div>
+     <button id="checkoutButton">Ver Carrinho</button>
+    </div>
+
+    </header>
+            
+        <!--FINALMENTE ACABOU PQP,DEVO DIZER VAI TODO MUNDO SE FODER-->
+            <div class="search-bar">
+            <input type="text" placeholder="Find your game here">
+             <button>Procurar</button>
+            </div>
+            <nav class="menu" >
+                <ul>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="itens.html">Itens</a></li>
+                </ul>
+            </nav>
+
+        </div> 
+     </div>     
+  </header>
+<!--TERMINAR A COPIA AQUI-->
+
+   <!-- Seção de Promoções -->
+   <section class="promotions">
+        <div class="promo-banner">
+            <h2>PROMOÇÃO</h2>
+            <p>Desconto até <strong>90% OFF</strong></p>
+        </div>
+        <div class="container">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card">
+                        <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.24.01_f0349e73.jpg" alt="Card 1" onclick="window.location.href='Jogos.html';">
+                        <p>Card 1</p>
+                    </div>
+                    <div class="card">
+                        <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.26.52_d27aea43.jpg" alt="Card 2" onclick="window.location.href='Jogos.html';">
+                        <p>Card 2</p>
+                    </div>
+                    <div class="card">
+                        <img src="IMAGENS/GAME ICONS/Imagem do WhatsApp de 2024-09-30 à(s) 11.28.18_3943587e.jpg" alt="Card 3" onclick="window.location.href='Jogos.html';">
+                        <p>Card 3</p>
+                    </div>
+                    <!-- Adicione mais cards aqui -->
+                </div>
+                <div class="indicator-container">
+                    <span class="indicator active"></span>  <!-- Bolinha ativa -->
+                    <span class="indicator"></span>         <!-- Bolinha inativa -->
+                    <!-- E assim por diante para cada card -->
+                </div>
+            
+            </div>
+        
+            <!-- Adição dos botões para navegar pelos cards -->
+            <button class="prev" onclick="prevCard()">&#10094;</button>
+            <button class="next" onclick="nextCard()">&#10095;</button>
+
+        </div>
+    
+    
+    </section>
+    <!--outras paradas VSFD-->
+    <div class="content">
+       
+        <p>Bem-vindo ao Bonfire dos Jogos! 
+        <p> Nosso site é o seu ponto de encontro para encontrar as melhores ofertas em keys de jogos e itens exclusivos
+        <p> Aqui, você pode explorar uma vasta seleção de jogos para todas as plataformas e adquirir chaves de ativação de forma rápida, segura e confiável
+        <p>Além disso, oferecemos itens raros para aprimorar sua experiência em diversos jogos
+        <p> na Bonfire dos Jogos, acender sua paixão por games nunca foi tão fácil e acessível
+        <p>Junte-se à nossa comunidade e aproveite o melhor do mundo dos jogos com as melhores ofertas!
+                            </p> 
+                        </p>
+                    </p>    
+                </p> 
+            </p>
+        </p>
+    </div>
+
+
+    <div class="plans-container">
+        <div class="plan-card">
+          <h2>🔥Plano Base - Aventura Iniciante🔥</h2>
+          <p>Ideal para quem quer começar sua jornada no mundo dos jogos!</p>
+          <p class="price">R$ 10,99/mês</p>
+          <button>Escolher plano</button>
+          <ul>
+            <li>Descontos de até 10% em todas as keys de jogos</li>
+            <li>Acesso antecipado a promoções semanais</li>
+            <li>Suporte prioritário via chat</li>
+          </ul>
+        </div>
+      
+        <div class="plan-card popular">
+          <h2>🔥 Plano Pro - Desbravador de Mundos🔥</h2>
+          <p>Para quem quer elevar sua jogatina a um novo nível!</p>
+          <p class="price">R$ 50,99/mês</p>
+          <button>Escolher plano</button>
+          <ul>
+            <li>Descontos de até 20% em keys e itens de jogos</li>
+            <li>Antecipado a novos lançamentos e promoções exclusivas</li>
+            <li>Participação em sorteios mensais de itens raros</li>
+            <li>Suporte VIP 24h</li>
+          </ul>
+        </div>
+      
+        <div class="plan-card">
+          <h2>🔥Plano Premium - Mestre do Fogo🔥</h2>
+          <p> plano definitivo para gamers apaixonados por exclusividade!</p>
+          <p class="price">R$ 99,99/mês</p>
+          <button>Escolher plano</button>
+          <ul>
+            <li> Descontos de até 30% em keys, itens raros e DLCs. </li>
+            <li>Acesso ilimitado a promoções exclusivas e conteúdos especiais.</li>
+            <li> Itens lendários como bônus em compras acima de determinado valor.</li>
+            <li>Suporte VIP dedicado e atendimento prioritário.</li>
+            <li>Participação em sorteios semanais de games completos e colecionáveis.</li>
+          </ul>
+        </div>
+
+        <div class="mensagem-plano">
+            <h2>🔥Escolha o plano que melhor se adapta ao seu estilo de jogo e acenda sua chama no Bonfire dos Jogos!🔥</h2>
+        </div>
+      </div>
+
+    <div class="highlights2">
+        <h1>Reviews em GRAFICOS</h1>
+        <p>AQUI È PARA TER GRAFICOS</p>
+    </div>
+
+    <div class="highlights3">
+        <h1>Preencha nosso formulario</h1>
+        <p>AQUI È PARA TER Formularios</p>
+    </div>
+
+    <!-- Container do Rodapé -->
+    <div class="footer">
+        <p>Rodapé do site</p>
+    </div>
+</div>
+</div>
+    <script src="ScriptsStyle/indexscripts/card.js"></script>
+    <script src="ScriptsStyle/buttonCompra.js"></script>
+    <script src="ScriptsStyle/carrinho.js"></script>
+    <script src="ScriptsStyle/modal.js"></script>
+    <script src="ScriptsStyle/sidebar.js"></script>
+    <script src="ScriptsStyle/formCad.js"></script>
+</body>
+</html>
+ <!-- Container do Planos <div class="botao_ativo" >
+            <div class="botao_ativo2" >
+                <a href="jogos.html" class="botao-link">Itens</a>
+            
+            <a href="jogos.html" class="botao-link">Jogos</a>
+        </div>
+    </div>
+    </div>--> 

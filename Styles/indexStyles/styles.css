@@ -1,0 +1,649 @@
+/*COPIAR DAQUI SEMPRE O CABEÇARIO*/
+/* Estilo geral */
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+  overflow-x: hidden; /* Evita a rolagem horizontal */
+  overflow-y: auto; /* Permite rolagem vertical */
+  background: scroll;
+  background: linear-gradient(rgb(0,0,0),rgb(255, 191, 0), rgb(247, 53, 0));
+    }
+.header2 {
+    background-color: rgb(184, 4, 4);
+    color: white;
+    z-index: 900;
+    text-align: center;
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    padding: 50px 1900px;
+}
+
+/* Estilos para o botão e o preview do carrinho */
+#cartButton {
+    position: absolute;
+    left: 1900px;
+    top: 40px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+} 
+
+#cartCount {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.cart-preview {
+    align-content: center;
+    position: absolute;
+    left: 1526px; /* Ajuste o valor para posicionar próximo ao botão */
+    top: 92px; /* Ajuste o valor para alinhar com o botão */
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 500px;
+    height: 200px;
+    z-index: 1050; /* Certifique-se de que está acima de outros elementos */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+.cart-preview button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    position: absolute;
+    top: 180px;
+}
+
+
+.hidden {
+    display: none;
+
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+position: absolute;
+border: red;
+padding-left: 250px;
+top: 150px;
+    width: 950px;
+    height: auto;
+    margin-right: 10px;
+    z-index: 950;
+}
+
+.cart-item-info p {
+position: relative;
+left: 200px;
+top: 10px;
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/*FIM DA PARTE DO CARRINHO*/
+/*BARRA LATERAL*/
+.cont-principal{
+    display: flex;
+}
+.sidebar {
+  width: 100px;
+  height: 100px;
+    background-color: #333;
+    transition: height 0.8s ease;
+    overflow: hidden;
+    position: fixed; /* Fixa a barra lateral */
+    top: 0;                /* Inicia no topo da página */
+    right: 0;              /* Sidebar alinhada à direita */
+    z-index: 905;
+  }
+  
+  .sidebar.expanded {
+    height: 350px; /* Altura quando expandida */
+  }
+  
+  .sidebar button {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  }
+  
+  .sidebar nav {
+    display: none;
+  }
+  
+  .sidebar.expanded nav {
+    display: block;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 18px;    
+    font-weight: bold;
+    
+  }
+  .sidebar nav ul li  :hover {
+
+    background-color:linear-gradient(rgb(0, 0, 0), rgb(249, 187, 0));; /*Cor do botão ao passar o mouse */
+    color: gold;/*  Muda a cor do texto ao passar o mouse */
+  }
+
+  .content2 {
+    flex: 1;
+
+
+  }
+/*FIM DA BARRA LATERAL*/
+/* Cabeçalho */
+.header {
+    position: static;
+    background-image: url(1199508.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 150px;
+    text-align: center;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2000px;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 2500px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 250px;
+}
+
+#cart-count {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    margin-right: 2500px;
+}
+
+/*INICIO DA COVARDIA*/
+
+.logo h1 {
+    position: fixed;
+    text-decoration: line-through;
+    z-index: 9010;
+    bottom:1020px;
+    left: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 30px;    
+    font-weight: bold;
+    color: white;
+}
+.logo img{
+    position: fixed;
+   bottom: 1000px;
+    left: 1320px;
+    z-index: 902;
+    width: 100px;
+    height: 100px;
+}
+
+/*MENU DO CABEÇARIO*/
+.menu{
+margin-right: 100px;
+
+
+
+}
+
+.menu ul {
+   
+    list-style-type: none;
+    display: flex;
+    margin-right: 2050px;
+    position: absolute;
+    left: 15px;
+    top: 52px;
+}
+
+.menu ul li {
+    margin-right: 20px;
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    
+    
+}
+.menu ul li a:hover {
+    background-color:linear-gradient(rgb(0, 0, 0), rgb(249, 187, 0));; /*Cor do botão ao passar o mouse */
+    color: gold;/*  Muda a cor do texto ao passar o mouse */
+
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+.menu ul li{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 1950px;
+    position: absolute;
+    left: 55px;
+    bottom: 40px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.search-bar button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+/*copiar até aqui SEMPRE PARA O CABEÇARIO*/
+
+.promotions {
+    position: relative;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #2e1a46;
+    width: 100%;
+}
+.promo-banner {
+    
+    text-align: center;
+    background-color:rgb(203, 117, 4);
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.promo-banner h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+.promo-banner p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+.mensagem-plano{
+    text-align: center;
+    background-color:#2e1a46;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.mensagem-plano h2{
+font-size: 30px;
+color: gold;
+}
+
+/* Ajuste na posição das bolinhas (indicadores) */
+.indicator-container {
+    position: absolute;
+    bottom: 255px; /* Ajuste para que as bolinhas fiquem no pé da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Ajuste das bolinhas (indicadores) */
+.indicator {
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: rgba(207, 207, 207, 0.749);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.indicator.active {
+    background-color: blue; /* Cor da bolinha ativa */
+}
+
+/* Ajuste na posição dos botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 60px;
+    font-size: 30px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ajuste geral para o carrossel */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+/* Estilos dos cards */
+.card { 
+    position: relative;
+    top: 150px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    cursor: pointer; /* Clique apenas na imagem */
+}
+
+.card p {
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+/*RESTANTE*/
+
+
+/* Estilo do container principal */
+.main-container {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.375);
+    width: 100%;
+}
+.highlights {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #2e1a46;
+    width: 100%;
+}
+
+.highlights2{
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgba(153, 205, 50, 0.5);
+    width: 100%;
+}
+
+.highlights3{
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.718);
+    width: 100%;
+}
+
+
+/* Conteúdo principal */
+.content {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color:#3e2f51;
+    width: 100%;
+    flex-grow: 1; /* Faz o conteúdo principal crescer para ocupar o restante do espaço */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma leve sombra */
+}
+.content p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .plan-card {
+
+    background-color:#3a264e ;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 23%;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .plan-card h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .plan-card .price {
+    color: white;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .plan-card button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .plan-card button:hover {
+    background-color: #434190;
+  }
+  
+  .plan-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .plan-card ul li {
+    padding: 5px 0;
+  }
+  
+  .plan-card.popular {
+    border-color: #805ad5;
+  }
+  
+  @media (max-width: 768px) {
+    .plan-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .plan-card {
+      width: 100%;
+    }
+  }
+  
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+   
+   
+   width: 100%;
+    bottom: 0;
+}
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+    
+    header .container {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+
+/*<div class="container2">
+    <div class="main-content">
+           <h2>Catalogo</h2>
+           <p>Aproveitenossas ofertas...</p>
+       </section>
+   </div>
+</div>
+<div2 class="container3">
+   <div class="footer">
+       <p>&copy;2024</p>
+   </div>
+</div>
+</div>*/
+/* Footer fixo com container */
+

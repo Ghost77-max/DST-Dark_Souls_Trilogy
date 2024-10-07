@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="Styles/stylesLogCad.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" required>
+                
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" required>
+                
+                <button type="submit">Entrar</button>
+                <p class="toggle-form">Não tem uma conta? <span id="go-to-register">Cadastre-se</span></p>
+            </form>
+
+            <h2>Cadastro</h2>
+            <form id="register-form" style="display: none;">
+                <label for="register-email">E-mail</label>
+                <input type="email" id="register-email" required>
+                
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password" required>
+                
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" required>
+                
+                <button type="submit">Cadastrar</button>
+                <p class="toggle-form">Já tem uma conta? <span id="go-to-login">Login</span></p>
+            </form>
+        </div>
+    </div>
+    <script src="ScriptsStyle/formCad.js"></script>
+</body>
+</html>
